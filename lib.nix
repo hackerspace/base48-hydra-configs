@@ -9,7 +9,7 @@ rec {
     checkinterval = 3600;
     enableemail = false;
     emailoverride = "";
-    timeout = 10800;
+    #    timeout = 10800;
   };
   mkJobset = { enabled ? 1, hidden ? false, description ? "", nixexprinput, nixexprpath, checkinterval ? 5 * minutes, schedulingshares ? 100, enableemail ? false, emailoverride ? false, keepnr ? 10, inputs }@args: {
     enabled = 1;
