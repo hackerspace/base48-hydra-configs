@@ -25,7 +25,7 @@ let
         value = ''[ \"x86_64-linux\" \"armv7l-linux\" ]'';
       };
     };
-    mail = true;
+    mail = false;
     mailOverride = "srk@48.io";
   };
   jobsetsAttrs = with pkgs.lib; mapAttrs (name: settings: recursiveUpdate defaultSettings settings) (rec {
