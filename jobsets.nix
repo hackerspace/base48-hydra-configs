@@ -22,7 +22,7 @@ let
       };
       supportedSystems = {
         type = "nix";
-        value = ''[ \"x86_64-linux\" ]'';
+        value = ''[ \"x86_64-linux\" \"armv7l-linux\" ]'';
       };
     };
     mail = true;
